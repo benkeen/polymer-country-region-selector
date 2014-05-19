@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script src="bower_components/platform/platform.js"></script>
 	<link rel="import" href="elements/country-region-selector.html">
 </head>
 <body>
+	<h1>country-region-selector Polymer element</h1>
+
+	<hr size="1" />
+	<h2>1. Out the box</h2>
 	<country-region-selector></country-region-selector>
+
+	<hr size="1" />
+	<h2>2. Custom Names</h2>
+	<country-region-selector countryDropdownName="c" regionDropdownName="r"></country-region-selector>
+
+	<hr size="1" />
+	<h2>3. Custom Default & blank labels</h2>
+	<country-region-selector countryEmptyLabel="No countries!" regionEmptyLabel="No region selected!"
+		regionBlankOption="Select a country to see the list of regions"></country-region-selector>
+
+	<hr size="1" />
+	<h2>4. country short codes (for values in country dropdown)</h2>
+	<country-region-selector countryUseShortcode="true"></country-region-selector>
+
+	<hr size="1" />
+	<h2>5. default country set</h2>
+	<country-region-selector countryValue="Canada"></country-region-selector>
+
+	<hr size="1" />
+	<h2>6. default country and region set</h2>
+	<country-region-selector countryValue="Canada" regionValue="British Columbia"></country-region-selector>
+
+	<h2>7. custom region &lt;select&gt; field</h2>
+	<country-region-selector targetRegionDropdownId="myCustomField"></country-region-selector>
+	<div>
+		Whoah! custom markup!
+		<select id="myCustomField"></select>
+	</div>
+
 </body>
 </html>
