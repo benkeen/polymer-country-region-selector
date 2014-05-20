@@ -13,7 +13,7 @@
 		Polymer("country-region-selector", {
 
 			// public API
-			countryEmptyLabel: "Select Country", // TESTED
+			countryEmptyLabel: "Select Country",
 			countryValue: "",
 			countryUseShortcode: false,
 			countryDropdownName: "country",
@@ -28,7 +28,6 @@
 
 				// if the user's targeting their own <select> for the regions, hide the default one
 				if (this.targetRegionDropdownId !== null) {
-
 					if (!document.getElementById(this.targetRegionDropdownId)) {
 						console.error("Invalid targetRegionDropdownId for the country-region-selector element. This component won't work until this problem is resolved.")
 						return;
