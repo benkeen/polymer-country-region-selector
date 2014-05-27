@@ -34,8 +34,9 @@
       <section>
 
 		  <p>
-			  This a Polymer component for adding country-region dropdowns to your forms. The component automatically updates
-			  the region dropdown with whatever values are appropriate, based on the selection in the country dropdown.
+			  This a <a href="http://www.polymer-project.org/">Polymer</a> component for adding country-region
+			  dropdowns to your forms. The component automatically updates the region dropdown with whatever regions
+			  are appropriate, based on the selection in the country dropdown.
 			</p>
 			<p>
 				This page contains a few examples of how it can be configured. For more information,
@@ -43,43 +44,52 @@
 			</p>
 
 
-			<h4>1. Out the box</h4>
+			<h2>1. Out the box</h2>
 			<country-region-selector></country-region-selector>
 			<pre><code>&lt;country-region-selector>&lt;/country-region-selector></code></pre>
 
-
 			<h2>2. Custom Names</h2>
 			<country-region-selector countryDropdownName="c" regionDropdownName="r"></country-region-selector>
+			<pre><code>&lt;country-region-selector countryDropdownName="c" regionDropdownName="r">&lt;/country-region-selector></code></pre>
 
-			<hr size="1" />
 			<h2>3. Custom Default & blank labels</h2>
 			<country-region-selector countryEmptyLabel="No countries!" regionEmptyLabel="No region selected!"
-			regionBlankOption="Select a country to see the list of regions"></country-region-selector>
+				regionBlankOption="Select a country to see the list of regions"></country-region-selector>
+			<pre><code>&lt;country-region-selector
+	countryEmptyLabel="No countries!"
+	regionEmptyLabel="No region selected!"
+	regionBlankOption="Select a country to see the list of regions">&lt;/country-region-selector>></code></pre>
 
-			<hr size="1" />
 			<h2>4. country short codes (for values in country dropdown)</h2>
 			<country-region-selector countryUseShortcode="true"></country-region-selector>
+			<pre><code>&lt;country-region-selector countryUseShortcode="true">&lt;/country-region-selector></code></pre>
 
-			<hr size="1" />
 			<h2>5. default country set</h2>
 			<country-region-selector countryValue="Canada"></country-region-selector>
+			<pre><code>&lt;country-region-selector countryValue="Canada">&lt;/country-region-selector></code></pre>
 
-			<hr size="1" />
 			<h2>6. default country and region set</h2>
 			<country-region-selector countryValue="Canada" regionValue="British Columbia"></country-region-selector>
+			<pre><code>&lt;country-region-selector
+	countryValue="Canada"
+	regionValue="British Columbia">&lt;/country-region-selector></code></pre>
 
 			<h2>7. custom region &lt;select&gt; field</h2>
 			<country-region-selector targetRegionDropdownId="myCustomField"></country-region-selector>
 			<div>
-			Whoah! custom markup!
-			<select id="myCustomField"></select>
+				Whoah! custom markup!
+				<select id="myCustomField"></select>
 			</div>
 
-</section>
+		  <pre><code>&lt;country-region-selector
+	targetRegionDropdownId="myCustomField"></country-region-selector>
+&lt;div>
+	Whoah! custom markup!
+	&lt;select id="myCustomField">&lt;/select>
+&lt;/div></code></pre>
+		</section>
 
-
-
-      <footer>
+		<footer>
         <p>This project is maintained by <a href="https://github.com/benkeen">benkeen</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
