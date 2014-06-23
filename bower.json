@@ -1,6 +1,6 @@
 {
   "name": "polymer-country-region-selector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/benkeen/polymer-country-region-selector",
   "authors": [
     "Ben Keen <ben.keen@gmail.com>"
@@ -8,6 +8,7 @@
   "description": "A Polymer component to add dynamic, connected country and region dropdowns to your forms.",
   "keywords": [
     "polymer",
+    "web-components",
     "country",
     "countries",
     "regions",
