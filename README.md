@@ -1,5 +1,10 @@
 # polymer-country-region-selector
 
+```
+Note: please don't use this element yet. There's a problem where elements in a shadow DOM don't submit along with
+the form submission, so it can't be used without additional JS.
+```
+
 This a [Polymer](http://www.polymer-project.org/) component for adding country-region dropdowns to your forms. The
 component automatically updates the region dropdown with whatever values are appropriate, based on the selection in the
 country dropdown.
