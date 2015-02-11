@@ -60,5 +60,6 @@ MIT
 
 ### Changelog
 
+- **0.1.3**- Feb 10, 2015. Updated Ukraine regions.
 - **0.1.1** June 22, minor update for Bower
 - **0.1.0** May 26, initial version.
